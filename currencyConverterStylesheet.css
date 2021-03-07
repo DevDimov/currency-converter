@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: grey;
+}
+
+.flex-container,
+.amount-container,
+.result-container,
+#result-border {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container,
+.options-container {
+    align-items: center;
+}
+
+.options-container,
+.amount-container,
+.result-container {
+    width: 475px;
+}
+
+.amount-container,
+input,
+.result-container,
+#result-border {
+    height: 100px;
+}
+
+.flex-container {
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.options-container {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+select {
+    padding: 5px 10px 5px 5px;
+    width: 185px;
+    height: 40px;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.amount-container {
+    align-items: left;
+}
+
+input {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.result-container {
+    align-items: left;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#result-border {
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#output-amount {
+    font-size: 40px;
+    font-weight: 500;
+    padding-right: 10px;
+}

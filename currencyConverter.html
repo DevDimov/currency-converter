@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Converter</title>
+        <link rel="stylesheet" type="text/css" href="currencyConverterStylesheet.css">
+    </head>
+    <body>
+        <div class="flex-container">
+            <h1>Currency Converter</h1>
+            
+            <div class="options-container">
+                <div>
+                    <label for="from">From</label>
+                    <select name="from" id="from-currency" required>
+                        <option value="AUD" id="AUD">Australian Dollar (AUD)</option>
+                        <option value="CHF" id="CHF">Swiss Franc (CHF)</option>
+                        <option value="EUR" id="EUR">Euro (EUR)</option>
+                        <option value="GBP" id="GBP" selected>Pound Sterling (GBP)</option>
+                        <option value="USD" id="USD" >American Dollar (USD)</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="to">To</label>
+                    <select name="to" id="to-currency" required>
+                        <option value="AUD" id="AUD">Australian Dollar (AUD)</option>
+                        <option value="CHF" id="CHF">Swiss Franc (CHF)</option>
+                        <option value="EUR" id="EUR">Euro (EUR)</option>
+                        <option value="GBP" id="GBP" disabled>Pound Sterling (GBP)</option>
+                        <option value="USD" id="USD">American Dollar (USD)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="amount-container">
+                <label for="amount">Amount</label>
+                <input type="text" name="amount" id="input" maxlength="11">
+            </div>
+
+            <div class="result-container">
+                <!-- <label for="result">Result</label> -->
+                <div id="result-border">
+                    <label for="converted" id="output-amount"></label>
+                </div>
+            </div>
+            <label for="result explanation" id="output-status">Exchange rates retrieved up to 31 Dec 2016 by Quandle's free API</label>
+        </div>
+        <script src="currencyConverterScript.js"></script>
+    </body>
+</html>
